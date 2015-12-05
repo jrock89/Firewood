@@ -33,7 +33,7 @@
     wp_enqueue_style('custom', get_template_directory_uri() . '/style.css');
 
     // add scripts
-    wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), true);
+    wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), true);
 
     if( is_singular()) wp_enqueue_script('comment-reply');
 
@@ -67,6 +67,91 @@
 
   }
   add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+
+  // ADVANCED CUSTOM FIELDS
+  //HEADER
+  function phoneHeader(){
+      the_field('phone_header');
+  }
+  function emailHeader(){
+      the_field('email_header');
+  }
+  function addressHeader(){
+      the_field('address_header');
+  }
+
+  //home
+  function bannerImageOne(){
+    the_field('banner_image_one');
+  }
+  function bannerOneTitle(){
+    the_field('banner_one_title');
+  }
+  function bannerOneSubInfo(){
+    the_field('banner_one_sub_info');
+  }
+  function bannerOneLink(){
+    the_field('banner_one_link');
+  }
+
+  function bannerImageTwo(){
+    the_field('banner_image_two');
+  }
+  function bannerTwoTitle(){
+    the_field('banner_two_title');
+  }
+  function bannerTwoSubInfo(){
+    the_field('banner_two_sub_info');
+  }
+  function bannerTwoLink(){
+    the_field('banner_two_link');
+  }
+  function carouselInterval(){
+    the_field('carousel_interval');
+  }
+
+  function leftInfoBoxTitle(){
+    the_field('left_info_box_title');
+  }
+  function leftInfoBoxInfo(){
+    the_field('left_info_box_info');
+  }
+
+  function rightInfoBoxTitle(){
+    the_field('right_info_box_title');
+  }
+  function rightInfoBoxInfo(){
+    the_field('right_info_box_info');
+  }
+
+  //contact
+  function leftInformationBox(){
+    the_field('left_information_box');
+  }
+  function contactRightInfoBoxTitle(){
+    the_field('contact_right_info_box_title');
+  }
+  function contactRightInfoBoxDirections(){
+    the_field('contact_right_info_box_directions');
+  }
+  function contactRightInfoBoxAddressLine1(){
+    the_field('contact_right_info_box_address_line_1');
+  }
+  function contactRightInfoBoxAddressLine2(){
+    the_field('contact_right_info_box_address_line_2');
+  }
+  function rightInfoBoxPhone(){
+    the_field('right_info_box_phone');
+  }
+  function rightInfoBoxEmail(){
+    the_field('right_info_box_email');
+  }
+
+  //footer information
+  function footerInfo(){
+    the_field('footer_info');
+  }
 
 
 

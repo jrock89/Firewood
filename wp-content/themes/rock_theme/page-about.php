@@ -12,25 +12,45 @@ get_header(); ?>
 <!-- ABOUT US SECTION -->
 <section id="about">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-sm-offset-3">
-        <h2>About Us</h2>
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/divider-purple.png" alt="divider" />
-      </div>
-      <!-- end diver col -->
-    </div>
 
-    <div class="row">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt molestie cursus. In non neque ut purus accumsan scelerisque. Morbi eu congue urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec eu nisl congue, gravida turpis et, accumsan turpis. Nullam tincidunt eleifend finibus. Nullam interdum tempor nibh eu scelerisque. Maecenas nec sagittis tellus. In blandit metus erat, ac elementum velit laoreet eget. Maecenas aliquet eget odio vitae imperdiet.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt molestie cursus. In non neque ut purus accumsan scelerisque. Morbi eu congue urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec eu nisl congue, gravida turpis et, accumsan turpis. Nullam tincidunt eleifend finibus. Nullam interdum tempor nibh eu scelerisque. Maecenas nec sagittis tellus. In blandit metus erat, ac elementum velit laoreet eget. Maecenas aliquet eget odio vitae imperdiet.
-      </p>
-    </div>
 
-    <!-- end diver row -->
-    <?php get_template_part('content-facilities'); ?>
+
+        <div class="page_title">
+          <div class="col-xs-12">
+            <h1>About Us</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 about_left">
+            <h2><strong>Seasoned Gourmet Firewood</strong></h2>
+            <h4>Your Tri-County Area Firewood Dealer</h4>
+            <p>
+              With over 4000 customers we here at Seasoned Gourmet Firewood have become known for quality and service. For over 19 years customers from all over the New York Tri-County Area have enjoyed the best firewood around. We are a full service firewood provider. We supply 24 area restaurants with Food Grade* Firewood.
+            </p>
+            <p>
+              * No poisonous orchard spray
+            </p>
+            <a href="http://goo.gl/maps/CDSpK">
+              <img src="http://maps.googleapis.com/maps/api/staticmap?size=640x400&zoom=8&maptype=roadmap&markers=color:green|4226+Route+50,+Saratoga+Springs,+NY&sensor=false&apikey=AIzaSyDt4pJnvl-oyZBM35zlrLZOPXq6zUifA9Y" alt="Seasoned Groumet Firewood Location" />
+            </a>
+          </div>
+          <div class="col-sm-6 about_left">
+            <h2><strong>Why We Call Our Wood Gourmet</strong></h2>
+            <p>
+              Here at Seasoned Gourmet Firewood we cure our hard woods off the ground 1 to 2 years and only after this time will we sell it as seasoned wood. Our hard woods are stacked off the ground for a minimum of one year and it is bone dry. We take pride in our dependable, easy burning Adirondack hard woods. Our seasoned firewoods burn up to 4 times longer than convenience store brand woods. <strong class="text-warning">You will NOT find Pine, Popal, Basswood, Willow, or any junk wood in our collection of hard woods. No junk. No dirt.</strong>
+            </p>
+
+
+          </div>
+
+        </div>
+
+        <!-- end diver row -->
+        <div class="row message-area">
+            <div class="col-sm-12">
+
+            </div>
+        </div>
 
   </div>
   <!-- end diveder container -->
@@ -42,5 +62,5 @@ get_header(); ?>
 
 
 
-
+  </div>
 <?php get_footer(); ?>
