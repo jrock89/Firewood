@@ -59,7 +59,7 @@
   	register_sidebar( array(
   		'name'          => 'Sidebar',
   		'id'            => 'sidebar_blog',
-  		'before_widget' => '<div class="sidebar-module">',
+  		'before_widget' => '<div class="sidebar-module col-md-3">',
   		'after_widget'  => '</div>',
   		'before_title'  => '<h4>',
   		'after_title'   => '</h4>',
@@ -146,6 +146,40 @@
   }
   function rightInfoBoxEmail(){
     the_field('right_info_box_email');
+  }
+
+  //about us
+  function aboutLeftInfoBoxTitle(){
+    the_field('about_left_info_box_title');
+  }
+  function aboutLeftInfoBoxInfo(){
+    the_field('about_left_info_box_info');
+  }
+  function aboutLeftInfoBoxSubTitle(){
+    the_field('about_left_info_box_sub_title');
+  }
+  function aboutRightInfoBoxTitle(){
+    the_field('about_right_info_box_title');
+  }
+  function aboutRightInfoBoxInfo(){
+    the_field('about_right_info_box_info');
+  }
+  function aboutRightInfoBoxWarning(){
+    the_field('about_right_info_box_warning');
+  }
+
+  //products
+  function productsIntro(){
+    the_field('products_info');
+  }
+  function contentTitle(){
+    the_field('content_title');
+  }
+  function subTitle(){
+    the_field('sub_title');
+  }
+  function subInfo(){
+    the_field('sub_info');
   }
 
   //footer information
